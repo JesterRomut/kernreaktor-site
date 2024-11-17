@@ -12,6 +12,7 @@ import { Loading } from './Loading'
 import {Footer} from "@/components/Footer";
 import React from "react";
 import {NotionPageHeader} from "@/components/NotionPageHeader";
+import { Analytics } from "@vercel/analytics/react"
 import {Property} from "csstype";
 
 // -----------------------------------------------------------------------------
@@ -147,6 +148,7 @@ export function NotionPage({
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
+        <Analytics/>
       <NotionRenderer
         recordMap={recordMap}
         fullPage={true}
@@ -170,6 +172,8 @@ export function NotionPage({
         // NOTE: custom images will only take effect if previewImages is true and
         // if the image has a valid preview image defined in recordMap.preview_images[src]
       />
+
+
     </>
   )
 }

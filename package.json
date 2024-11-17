@@ -14,6 +14,7 @@
   "dependencies": {
     "@fisch0920/use-dark-mode": "^2.4.0",
     "@notionhq/client": "^2.2.15",
+    "@vercel/analytics": "^1.4.0",
     "classnames": "^2.5.1",
     "ky": "^1.7.2",
     "lqip-modern": "^2.1.0",
